@@ -256,3 +256,10 @@ li a:hover:not(.active) {
     width:33.3%;
     float:left;
 }
+.footlink:link {
+    color: var(--color-white);
+}
+.footlink:hover {
+    color: var(--color-secondary);
+    transition: var(--transition);
+}
