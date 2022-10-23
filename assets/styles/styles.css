@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+:root {
+    --color-primary: #272626;
+    --color-secondary: #D5FC44;
+    --color-white: #fff;
+    --color-light: #8F8D8D;
+    --color-black: #000;
+    --color-bg: #272626;
+    --container-width-lg: 70%;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    color: var(--color-white);
+    background: var(--color-bg);
+}
+
+section {
+    padding: 6rem 0;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color-bg);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float:left;
+    margin:0px 20px;
+}
+
+li img {
+    width:55px;
+    height:55px;
+}
+
+li a {
+    display: inline-block;
+    color: var(--color-white);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li a:hover:not(.active) {
+    background-color:var(--color-black);
+}
+
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+/* body containers*/
+.body__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+    margin-top:2rem;
+}
+.body__left h1 {
+    font-size: 60px;
+    line-height: 78px;
+}
+.body__left p {
+    margin: 0rem 0 2.4rem;
+    font-size: 20px;
+    line-height: 30px;
+}
+.body__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* info containers*/
+.info {
+    background:var(--color-white);
+    height:65rem;
+    color:var(--color-black);
+}
+.info__container {
+    display: grid;
+    width: 60%;
+    grid-template-columns: 50% 50%;
+    margin-top: 5%;
+}
+.info__left {
+    display: grid;
+    position: center;
+}
+.info__left h1 {
+    margin-bottom: 30%;
+    display: grid;
+    text-align: center;
+}
+.info__right {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 0rem;
+    margin-left: 10%;
+}
+.info__right h1 {
+    font-size: 50px;
+    line-height: 60px;
+}
+.info__right p {
+    font-size: 20px;
+    line-height: 30px;
+}
