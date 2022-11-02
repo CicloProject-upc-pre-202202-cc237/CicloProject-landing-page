@@ -363,10 +363,32 @@ li a:hover:not(.active) {
 }
 /* planes */
 .planes {
+    /* display: flex;
+    flex-wrap: wrap; */
     background: var(--color-white);
     height: 70rem;
     text-align: center;
 }
+
+.in-flex {
+    flex: 1;
+    color: #000;
+    min-width: 300 px;
+}
+
+.in-flex:first-child{
+    flex: 2;
+    padding: 25px;
+    background-color: rgb(210, 95, 130);
+    margin: 20px;
+}
+
+.in-flex p{
+    padding: 25px;
+    background-color: rgb(60, 206, 111);
+    margin: 20px;
+}
+
 .planes h2 {
     font-weight: 700;
     font-size: 15px;
@@ -383,45 +405,56 @@ li a:hover:not(.active) {
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    padding: 0rem 41rem;
+    /* padding: 0rem 41rem; */
     color: var(--color-black);
 }
 .planes__container {
     display: grid;
+    gap: 2rem;
     width: 50%;
     text-align: center;
-    grid-template-columns: 50% 50%;
-    margin-left: 24%;
+    /* grid-template-columns: 50% 50%; */
+    /* grid-auto-rows: 22rem; */
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    /* margin-left: 24%; */
     margin-top: 5%;
     align-items: center;
-    gap: 2rem;
+
 }
-.planes__left {
+
+.planes__card{
+    display: grid;
+    border: 1px solid white;
+    border-color: var(--color-dark);
+    border-radius: 10px;
+}
+
+/* .planes__left {
     display: grid;
     padding:70px 40px;
     border: 1px solid white;
     border-color: var(--color-dark);
     border-radius: 10px;
-}
-.planes__left h1 {
+} */
+.planes__card h1 {
     font-weight:400;
     font-size: 40px;
     line-height: 60px;
     color: var(--color-black);
 }
-.planes__left h2 {
+.planes__card h2 {
     font-weight:400;
     font-size: 60px;
     line-height: 90px;
     color: var(--color-black);
 }
-.planes__left h3 {
+.planes__card h3 {
     font-weight:400;
     font-size:18px;
     line-height:27px;
     color: var(--color-black);
 }
-.planes__left p {
+.planes__card p {
     text-align: left;
     font-weight:400;
     font-size: 17px;
@@ -430,14 +463,14 @@ li a:hover:not(.active) {
     padding:10px;
     color: var(--color-black);
 }
-.planes__right {
+/* .planes__right {
     display: grid;
     text-align: center;
     padding:70px 40px;
     border: 1px solid white;
     border-color: var(--color-dark);
     border-radius: 10px;
-}
+} */
 .planes__right h1 {
     font-weight:400;
     font-size: 40px;
@@ -461,14 +494,14 @@ li a:hover:not(.active) {
     font-weight:400;
     font-size: 17px;
     line-height:25.5px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     padding:10px;
     color: var(--color-black);
 }
 .planes button {
     font-family: 'Poppins', sans-serif;
-    margin-left:80px;
-    margin-right:80px;
+    /* margin-left:80px;
+    margin-right:80px; */
     border: 1px solid white;
     border-color: var(--color-dark);
     border-radius: 10px;
