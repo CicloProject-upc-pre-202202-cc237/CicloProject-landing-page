@@ -665,3 +665,59 @@ li a:hover:not(.active) {
     text-align:center;
     margin:0 auto;
 }
+/*profile*/
+.profile_icon {
+    position:absolute;
+    right: 20px;
+    top: -10px;
+    font-size:32px;
+    color:white;
+}
+.perfil {
+    background: var(--color-white);
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile {
+    width: 90%;
+    height: auto;
+}
+.perfil_imagen {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.title {
+    display: flex;
+    flex-direction: row;
+}
+.title_information{
+    margin-right: auto;
+}
+.perfil h1 {
+    font-size: 18px;
+    margin-right: auto; 
+    color:#000;
+}
+.edit{
+    font-size: 18px;
+    margin-left: auto;
+    color: blue;
+}
+.edit:hover {
+    cursor: pointer;
+
+}
+.perfil p {
+    font-size:20px;
+    color: #000;
+}
+.information_align {
+    text-align: left;
+}   
+.border_div {
+    border-bottom: 1px solid #000;
+}
