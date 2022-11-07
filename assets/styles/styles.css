@@ -20,6 +20,9 @@
     
     --transition: all 400ms ease;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.7;
@@ -146,6 +149,7 @@ li a:hover:not(.active) {
     background: var(--color-primary);
     color: var(--color-secondary);
     border-color: var(--color-white);
+    cursor: pointer;
 }
 .saber_mas_btn {   
     margin-top: 10%;
@@ -249,12 +253,16 @@ li a:hover:not(.active) {
     background: var(--color-secondary);
     border-color: transparent;
     transition: var(--transition);
+    cursor:pointer;
 }
 .footer__col {
     text-align: center;
     padding: 3rem;
     width:33.3%;
     float:left;
+}
+.footer__col img {
+    width:100px;
 }
 .footlink:link {
     color: var(--color-white);
@@ -295,6 +303,9 @@ li a:hover:not(.active) {
     background: var(--color-white);
     height: 40rem;
     padding:10rem 20rem;
+}
+.pasos img {
+    width: 100%;
 }
 .pasos h2 {
     text-align: left;
@@ -559,6 +570,9 @@ li a:hover:not(.active) {
     text-align: center;
     color:var(--color-black);
 }
+.team__box img {
+    margin: auto;
+}
 .team__box h1 {
     font-weight:400;
     font-size:25px;
@@ -608,6 +622,10 @@ li a:hover:not(.active) {
 .contacto__left {
     text-align: left;
 }
+.contacto__left img {
+    float:left;
+    padding:0px 20px;
+}
 .contacto__right {
     text-align: left;
     align-items: center;
@@ -619,12 +637,17 @@ li a:hover:not(.active) {
     line-height: 24px;
     text-indent:1rem;
     width:100%;
-    height:2rem;
     margin-bottom:2rem;
     border: 1px solid white;
     border-color: var(--color-dark);
     color: var(--color-light);
     border-radius: 10px;
+}
+.small__input {
+    height:2rem;
+}
+.big__input {
+    height:10rem;
 }
 .contacto button {
     display:flex;
